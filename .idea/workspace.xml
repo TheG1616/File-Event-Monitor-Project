@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dfc165e-f818-4a39-945a-46ee643408fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/main_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/FileSystemEventHandler" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/main_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/monitoring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/monitoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/monitoring.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.monitoring.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }

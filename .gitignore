@@ -1,0 +1,14 @@
+# Python ignore
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# IDE settings (VS Codegit / PyCharm)
+.idea/
+.vscode/
+*.swp

@@ -1,6 +1,32 @@
 import socket
 from advance_monitor import FileWatcher, EventProcessor
-import queue
+import threading
+
+class Client_Handler(threading.Thread):
+    def __init__(self, conn, addr, server):
+        super().__init__(daemon=True)
+        self.conn = conn
+        self.addr = addr
+        self.server = server
+
+    def run(self):
+        try:
+            while True:
+                data = self.conn.recv(1024)
+                if not data:
+                    break
+                print(data.decode("utf-8"))
+
+        except:
+            print("error problem")
+
+        finally:
+            if self.conn in self.server.list_of_clients:
+                self.server.list_of_clients.remove(self.conn)
+            self.conn.close()
+
+
+
 
 class Secure_Server:
         def __init__(self, server_ip, port):
@@ -23,7 +49,10 @@ class Secure_Server:
                         print("succes")
                         conn.sendall("auth_ok".encode("utf-8"))
                         #פה בהמשך אנחנו נכניס אותו לרשימת הלקוחות שלנו
-                        # self.list_of_clients.append(conn)
+                        self.list_of_clients.append(conn)
+                        client_thread = Client_Handler(conn, addr, self)
+                        client_thread.start()
+
 
                     else:
                         print("fail")

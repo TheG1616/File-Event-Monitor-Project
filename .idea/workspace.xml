@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dfc165e-f818-4a39-945a-46ee643408fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/advance_monitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test_monitor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/saved_files/hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/main_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.advance_monitor.executor": "Run",
+    "Python.main_client.executor": "Run",
+    "Python.main_server.executor": "Run",
     "Python.monitoring.executor": "Run",
+    "Python.server.executor": "Run",
     "Python.test_monitor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
